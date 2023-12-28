@@ -1,0 +1,41 @@
+@use 'variaveis';
+
+.header {
+       
+    &__container {
+        position: sticky;
+        top: 0;
+        left: 0;
+        padding: 8px 36px;
+        display: flex;
+        justify-content: space-between;
+        margin: 5px;
+        border-bottom: 1px solid variaveis.$corTextSecundario;
+                
+        @media (max-width:768px) {
+            padding: 0 12px 0 20px;
+        }
+    }
+
+    &__logo {
+        max-height: 50px;
+       
+       
+
+        @media (max-width:768px) {
+            max-width: 64px;
+        }
+    }
+
+    .button {
+        height: 50px;
+        width: 160px;
+
+        @media (max-width:768px) {
+            font-size: 13px;
+            padding: 8px 11px;
+            height: 40px;
+            letter-spacing: 0;
+        }
+    }
+}
